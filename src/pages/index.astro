@@ -11,6 +11,44 @@ import '../styles/globals.css'
 		<title>Astro</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+		<main>
+			<section>
+				<form action="">
+					<h2>Contact Us</h2>
+					<fieldset>
+						<label for="firstName">First Name:</label>
+						<input type="text" id="firstName" name="firstName" />
+						<label for="lastName">Last Name:</label>
+						<input type="text" id="lastName" name="lastName" />
+					</fieldset>
+					<fieldset>
+						<label for="email">Email Adress:</label>
+						<input type="email" id="email" name="email" />
+					</fieldset>
+					<fieldset>
+						<legend>Query Type</legend>
+						<div>
+							<div>
+								<input type="radio" id="generalEnquiry" name="generalEnquiry">
+								<label for="generalEnquiry">General Enquiry</label>
+							</div>
+							<div>
+								<input type="radio" id="supportRequest" name="supportRequest">
+								<label for="supportRequest">Support Request</label>
+							</div>
+						</div>
+					</fieldset>
+					<fieldset>
+						<label for="message">Message:</label>
+						<textarea id="message" name="message"></textarea>
+					</fieldset>
+					<fieldset>
+						<input type="checkbox" name="checkbox" id="checkbox">
+						<label for="checkbox">I consent to being contacted by the team</label>
+					</fieldset>
+					<button type="submit">Submit</button>
+				</form>
+			</section>
+		</main>
 	</body>
 </html>
