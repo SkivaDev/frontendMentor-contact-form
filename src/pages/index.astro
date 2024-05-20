@@ -11,42 +11,50 @@ import '../styles/globals.css'
 		<title>Astro</title>
 	</head>
 	<body>
-		<main>
-			<section>
-				<form action="">
-					<h2>Contact Us</h2>
-					<fieldset>
-						<label for="firstName">First Name:</label>
-						<input type="text" id="firstName" name="firstName" />
-						<label for="lastName">Last Name:</label>
-						<input type="text" id="lastName" name="lastName" />
+		<main class="w-full">
+			<section aria-labelledby="form section" class="w-full h-full mt-[130px] px-[20px]">
+				<form action="" class="max-w-[735px] w-full mx-auto px-[40px] py-[32px]">
+					<h2 class="text-[30px] font-medium">Contact Us</h2>
+					<fieldset class="flex justify-between gap-[16px] mt-[25px] w-full">
+						<legend class="sr-only">Personal Information</legend>
+						<div class="flex-1 w-full">
+							<label for="firstName">First Name <span>*</span></label>
+							<input type="text" id="firstName" name="firstName" class="block w-full px-[18px] py-[13px] mt-[8px] border border-black rounded-lg"/>
+						</div>
+						<div class="flex-1 w-full">
+							<label for="lastName">Last Name <span>*</span></label>
+							<input type="text" id="lastName" name="lastName" class="block w-full px-[18px] py-[13px] mt-[8px] border border-black rounded-lg"/>
+						</div>
 					</fieldset>
-					<fieldset>
-						<label for="email">Email Adress:</label>
-						<input type="email" id="email" name="email" />
+					<fieldset class="mt-[23px] w-full">
+						<legend class="sr-only">Contact Information</legend>
+						<label for="email">Email Address <span>*</span></label>
+						<input type="email" id="email" name="email"  class="block w-full px-[18px] py-[13px] mt-[8px] border border-black rounded-lg"/>
 					</fieldset>
-					<fieldset>
+					<fieldset class="mt-[23px] w-full">
 						<legend>Query Type</legend>
-						<div>
-							<div>
-								<input type="radio" id="generalEnquiry" name="generalEnquiry">
-								<label for="generalEnquiry">General Enquiry</label>
+						<div class="flex justify-between gap-[16px] mt-[7px] w-full">
+							<div class="flex-1 w-full flex items-center gap-[18px] px-[27px] py-[11px] mt-[8px] border border-black rounded-lg">
+								<input type="radio" id="generalEnquiry" name="generalEnquiry" class="scale-[1.4]">
+								<label for="generalEnquiry" class="text-[18px]">General Enquiry</label>
 							</div>
-							<div>
-								<input type="radio" id="supportRequest" name="supportRequest">
-								<label for="supportRequest">Support Request</label>
+							<div class="flex-1 w-full flex items-center gap-[18px] px-[27px] py-[11px] mt-[8px] border border-black rounded-lg">
+								<input type="radio" id="supportRequest" name="supportRequest" class="scale-[1.4]">
+								<label for="supportRequest" class="text-[18px]">Support Request</label>
 							</div>
 						</div>
 					</fieldset>
-					<fieldset>
+					<fieldset class="mt-[25px] w-full">
+						<legend class="sr-only">Message</legend>
 						<label for="message">Message:</label>
-						<textarea id="message" name="message"></textarea>
+						<textarea id="message" name="message" rows="3" class="block w-full px-[18px] py-[13px] mt-[8px] border border-black rounded-lg"></textarea>
 					</fieldset>
-					<fieldset>
-						<input type="checkbox" name="checkbox" id="checkbox">
-						<label for="checkbox">I consent to being contacted by the team</label>
+					<fieldset class="flex gap-[20px] mt-[44px] ml-[5px] w-full">
+						<legend class="sr-only">Consent</legend>
+						<input type="checkbox" name="checkbox" id="checkbox" class="scale-[1.4]">
+						<label for="checkbox" class="text-[18px] tracking-[-0.9px]">I consent to being contacted by the team <span>*</span></label>
 					</fieldset>
-					<button type="submit">Submit</button>
+					<button type="submit" class="mt-[37px] w-full px-[18px] py-[17px] rounded-[9px] text-[17px] font-bold bg-red">Submit</button>
 				</form>
 			</section>
 		</main>
