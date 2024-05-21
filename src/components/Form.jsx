@@ -36,7 +36,7 @@ const Form = () => {
                 message: "Please enter a valid first name",
               }
             })}
-            className="block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer"
+            className={`block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer ${errors.message ? 'border-red' : ''}`}
           />
           {errors.firstName && (
             <span className="block w-full mt-[8px] text-red">
@@ -62,7 +62,7 @@ const Form = () => {
                 message: "Please enter a valid last name",
               }
             })}
-            className="block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer"
+            className={`block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer ${errors.message ? 'border-red' : ''}`}
           />
           {errors.lastName && (
             <span className="block w-full mt-[8px] text-red">
@@ -91,7 +91,7 @@ const Form = () => {
             },
           })}
           validation={errors.email}
-          className="block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer"
+          className={`block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer ${errors.message ? 'border-red' : ''}`}
         />
         {errors.email && (
           <span className="block w-full mt-[8px] text-red">
@@ -156,7 +156,7 @@ const Form = () => {
               message: "This field is required",
             },
           })}
-          className="block rows- w-full h-[240px] md:h-auto px-[23px] py-[10px] mt-[8px] border border-medium-gray rounded-lg text-[18px]"
+          className={`block rows- w-full h-[240px] md:h-auto px-[23px] py-[10px] mt-[8px] border border-medium-gray rounded-lg text-[18px] ${errors.message ? 'border-red' : ''}`}
         ></textarea>
         {errors.message && (
           <span className="block w-full mt-[8px] text-red">
