@@ -31,6 +31,10 @@ const Form = () => {
                 value: true,
                 message: "This field is required",
               },
+              pattern: {
+                value: /^[a-zA-Z]+$/i,
+                message: "Please enter a valid first name",
+              }
             })}
             className="block w-full px-[23px] py-[11px] mt-[8px] border border-black rounded-lg text-[18px] cursor-pointer"
           />
@@ -53,6 +57,10 @@ const Form = () => {
                 value: true,
                 message: "This field is required",
               },
+              pattern: {
+                value: /^[a-zA-Z]+$/i,
+                message: "Please enter a valid last name",
+              }
             })}
             className="block w-full px-[23px] py-[11px] mt-[8px] border border-black rounded-lg text-[18px] cursor-pointer"
           />
