@@ -16,6 +16,13 @@ export default {
 				'red': 'hsl(0, 66%, 56%)',
 				'medium-gray': 'hsl(186, 15%, 59%)',
 				'dark-gray': 'hsl(187, 24%, 22%)',
+			},
+			borderColor: {
+				'light-green': 'hsl(148, 38%, 91%)',
+				'green': 'hsl(169, 82%, 27%)',
+				'red': 'hsl(0, 66%, 56%)',
+				'medium-gray': 'hsl(186, 15%, 59%)',
+				'dark-gray': 'hsl(187, 24%, 22%)',
 			}
 		},
 	},

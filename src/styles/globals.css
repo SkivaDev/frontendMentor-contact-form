@@ -10,3 +10,15 @@
     font-family: "Karla", sans-serif;
     @apply bg-light-green
   }
+
+ label, legend {
+    @apply text-dark-gray;
+ }
+
+  label span, legend span {
+    @apply text-green;
+  }
+
+  input[type="radio"] {
+    accent-color: hsl(169, 82%, 27%);
+}

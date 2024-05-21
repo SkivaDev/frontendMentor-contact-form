@@ -36,7 +36,7 @@ const Form = () => {
                 message: "Please enter a valid first name",
               }
             })}
-            className="block w-full px-[23px] py-[11px] mt-[8px] border border-black rounded-lg text-[18px] cursor-pointer"
+            className="block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer"
           />
           {errors.firstName && (
             <span className="block w-full mt-[8px] text-red">
@@ -62,7 +62,7 @@ const Form = () => {
                 message: "Please enter a valid last name",
               }
             })}
-            className="block w-full px-[23px] py-[11px] mt-[8px] border border-black rounded-lg text-[18px] cursor-pointer"
+            className="block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer"
           />
           {errors.lastName && (
             <span className="block w-full mt-[8px] text-red">
@@ -91,7 +91,7 @@ const Form = () => {
             },
           })}
           validation={errors.email}
-          className="block w-full px-[23px] py-[11px] mt-[8px] border border-black rounded-lg text-[18px] cursor-pointer"
+          className="block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer"
         />
         {errors.email && (
           <span className="block w-full mt-[8px] text-red">
@@ -104,7 +104,7 @@ const Form = () => {
           Query Type <span>*</span>
         </legend>
         <div className="flex flex-col md:flex-row justify-between gap-[16px] mt-[16px] w-full">
-          <label className="flex-1 w-full flex items-center gap-[17px] px-[29px] py-[11px] border border-black rounded-lg cursor-pointer">
+          <label className="flex-1 w-full flex items-center gap-[17px] px-[29px] py-[11px] border border-medium-gray rounded-lg cursor-pointer">
             <input
               type="radio"
               id="generalEnquiry"
@@ -120,7 +120,7 @@ const Form = () => {
             />
             <p className="text-[18px]">General Enquiry</p>
           </label>
-          <label className="flex-1 w-full flex items-center gap-[17px] px-[29px] py-[11px] border border-black rounded-lg cursor-pointer">
+          <label className="flex-1 w-full flex items-center gap-[17px] px-[29px] py-[11px] border border-medium-gray rounded-lg cursor-pointer">
             <input
               type="radio"
               id="supportRequest"
@@ -156,7 +156,7 @@ const Form = () => {
               message: "This field is required",
             },
           })}
-          className="block rows- w-full h-[240px] md:h-auto px-[23px] py-[10px] mt-[8px] border border-black rounded-lg text-[18px]"
+          className="block rows- w-full h-[240px] md:h-auto px-[23px] py-[10px] mt-[8px] border border-medium-gray rounded-lg text-[18px]"
         ></textarea>
         {errors.message && (
           <span className="block w-full mt-[8px] text-red">
