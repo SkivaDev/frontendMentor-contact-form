@@ -1,24 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap");
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: "Karla", sans-serif;
-    @apply bg-light-green
-  }
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
- label, legend {
-    @apply text-dark-gray;
- }
+body {
+  font-family: "Karla", sans-serif;
+  @apply bg-light-green;
+}
 
-  label span, legend span {
-    @apply text-green;
-  }
+label,
+legend {
+  @apply text-dark-gray;
+}
 
-  input[type="radio"] {
-    accent-color: hsl(169, 82%, 27%);
+label span,
+legend span {
+  @apply text-green;
+}
+
+input[type="radio"] {
+  accent-color: hsl(169, 82%, 27%);
+}
+
+input:focus,
+textarea:focus {
+  outline: hsl(169, 82%, 27%);
+  border-width: 2px;
+}
+
+input[type="checkbox"] {
+  accent-color: hsl(169, 82%, 27%);
 }

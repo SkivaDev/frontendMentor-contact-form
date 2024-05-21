@@ -178,7 +178,7 @@ const Form = () => {
                   "To submit the form, please consent to being contacted",
               },
             })}
-            className="scale-[1.4]"
+            className="scale-[1.4] cursor-pointer"
           />
           <label
             htmlFor="consent"
@@ -195,7 +195,7 @@ const Form = () => {
       </fieldset>
       <button
         type="submit"
-        className="mt-[40px] md:mt-[41px] w-full px-[11px] py-[17px] rounded-[7px] text-[17px] font-bold bg-green text-white"
+        className="mt-[40px] md:mt-[41px] w-full px-[11px] py-[17px] rounded-[7px] text-[17px] font-bold bg-green text-white hover:bg-light-green hover:text-green transition-all duration-300"
       >
         Submit
       </button>
