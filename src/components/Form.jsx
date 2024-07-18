@@ -13,10 +13,10 @@ const Form = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="max-w-[736px] w-full mx-auto px-[24px] md:px-[40px] pt-[18px] md:pt-[34px] pb-[23px] md:pb-[39px] bg-white rounded-[15px]"
+      className="max-w-[46rem] w-full mx-auto px-[1.5rem] md:px-[2.5rem] pt-[1.125rem] md:pt-[2.125rem] pb-[1.4375rem] md:pb-[2.4375rem] bg-white rounded-[.9375rem]"
     >
-      <h2 className="text-[30px] font-bold text-dark-gray">Contact Us</h2>
-      <fieldset className="flex flex-col md:flex-row justify-between gap-[24px] md:gap-[16px] mt-[25px] w-full">
+      <h2 className="text-[1.875rem] font-bold text-dark-gray">Contact Us</h2>
+      <fieldset className="flex flex-col md:flex-row justify-between gap-[1.5rem] md:gap-[1rem] mt-[1.5625rem] w-full">
         <legend className="sr-only">Personal Information</legend>
         <div className="flex-1 w-full">
           <label htmlFor="firstName">
@@ -34,12 +34,14 @@ const Form = () => {
               pattern: {
                 value: /^[a-zA-Z]+$/i,
                 message: "Please enter a valid first name",
-              }
+              },
             })}
-            className={`block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer ${errors.message ? 'border-red' : ''}`}
+            className={`block w-full px-[1.4375rem] py-[.6875rem] mt-[.5rem] border border-medium-gray rounded-lg text-[1.125rem] cursor-pointer ${
+              errors.message ? "border-red" : ""
+            }`}
           />
           {errors.firstName && (
-            <span className="block w-full mt-[8px] text-red">
+            <span className="block w-full mt-[.5rem] text-red">
               {errors.firstName.message}
             </span>
           )}
@@ -60,18 +62,20 @@ const Form = () => {
               pattern: {
                 value: /^[a-zA-Z]+$/i,
                 message: "Please enter a valid last name",
-              }
+              },
             })}
-            className={`block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer ${errors.message ? 'border-red' : ''}`}
+            className={`block w-full px-[1.4375rem] py-[.6875rem] mt-[.5rem] border border-medium-gray rounded-lg text-[1.125rem] cursor-pointer ${
+              errors.message ? "border-red" : ""
+            }`}
           />
           {errors.lastName && (
-            <span className="block w-full mt-[8px] text-red">
+            <span className="block w-full mt-[.5rem] text-red">
               {errors.lastName.message}
             </span>
           )}
         </div>
       </fieldset>
-      <fieldset className="mt-[24px] md:mt-[23px] w-full">
+      <fieldset className="mt-[1.5rem] md:mt-[1.4375rem] w-full">
         <legend className="sr-only">Contact Information</legend>
         <label htmlFor="email">
           Email Address <span>*</span>
@@ -91,20 +95,22 @@ const Form = () => {
             },
           })}
           validation={errors.email}
-          className={`block w-full px-[23px] py-[11px] mt-[8px] border border-medium-gray rounded-lg text-[18px] cursor-pointer ${errors.message ? 'border-red' : ''}`}
+          className={`block w-full px-[1.4375rem] py-[.6875rem] mt-[.5rem] border border-medium-gray rounded-lg text-[1.125rem] cursor-pointer ${
+            errors.message ? "border-red" : ""
+          }`}
         />
         {errors.email && (
-          <span className="block w-full mt-[8px] text-red">
+          <span className="block w-full mt-[.5rem] text-red">
             {errors.email.message}
           </span>
         )}
       </fieldset>
-      <fieldset className="mt-[24px] md:mt-[25px] w-full">
+      <fieldset className="mt-[1.5rem] md:mt-[1.5625rem] w-full">
         <legend>
           Query Type <span>*</span>
         </legend>
-        <div className="flex flex-col md:flex-row justify-between gap-[16px] mt-[16px] w-full">
-          <label className="flex-1 w-full flex items-center gap-[17px] px-[29px] py-[11px] border border-medium-gray rounded-lg cursor-pointer">
+        <div className="flex flex-col md:flex-row justify-between gap-[1rem] mt-[1rem] w-full">
+          <label className="flex-1 w-full flex items-center gap-[1.0625rem] px-[1.8125rem] py-[.6875rem] border border-medium-gray rounded-lg cursor-pointer">
             <input
               type="radio"
               id="generalEnquiry"
@@ -118,9 +124,9 @@ const Form = () => {
               })}
               className="scale-[1.4] cursor-pointer"
             />
-            <p className="text-[18px]">General Enquiry</p>
+            <p className="text-[1.125rem]">General Enquiry</p>
           </label>
-          <label className="flex-1 w-full flex items-center gap-[17px] px-[29px] py-[11px] border border-medium-gray rounded-lg cursor-pointer">
+          <label className="flex-1 w-full flex items-center gap-[1.0625rem] px-[1.8125rem] py-[.6875rem] border border-medium-gray rounded-lg cursor-pointer">
             <input
               type="radio"
               id="supportRequest"
@@ -134,16 +140,16 @@ const Form = () => {
               })}
               className="scale-[1.4] cursor-pointer"
             />
-            <p className="text-[18px]">Support Request</p>
+            <p className="text-[1.125rem]">Support Request</p>
           </label>
         </div>
         {errors.queryType && (
-          <span className="block w-full mt-[16px] text-red">
+          <span className="block w-full mt-[1rem] text-red">
             {errors.queryType.message}
           </span>
         )}
       </fieldset>
-      <fieldset className="mt-[24px] md:mt-[25px] w-full">
+      <fieldset className="mt-[1.5rem] md:mt-[1.5625rem] w-full">
         <legend className="sr-only">Message</legend>
         <label htmlFor="message">Message:</label>
         <textarea
@@ -156,17 +162,19 @@ const Form = () => {
               message: "This field is required",
             },
           })}
-          className={`block rows- w-full h-[240px] md:h-auto px-[23px] py-[10px] mt-[8px] border border-medium-gray rounded-lg text-[18px] ${errors.message ? 'border-red' : ''}`}
+          className={`block rows- w-full h-[15rem] md:h-auto px-[1.4375rem] py-[.625rem] mt-[.5rem] border border-medium-gray rounded-lg text-[1.125rem] ${
+            errors.message ? "border-red" : ""
+          }`}
         ></textarea>
         {errors.message && (
-          <span className="block w-full mt-[8px] text-red">
+          <span className="block w-full mt-[.5rem] text-red">
             {errors.message.message}
           </span>
         )}
       </fieldset>
-      <fieldset className="mt-[40px] w-full">
+      <fieldset className="mt-[2.5rem] w-full">
         <legend className="sr-only">Consent</legend>
-        <div className="flex gap-[21px] px-[5px]">
+        <div className="flex gap-[1.3125rem] px-[.3125rem]">
           <input
             type="checkbox"
             name="consent"
@@ -182,20 +190,20 @@ const Form = () => {
           />
           <label
             htmlFor="consent"
-            className="text-[18px] tracking-[-0.9px] leading-[24px] cursor-pointer"
+            className="text-[1.125rem] tracking-[-0.0563rem] leading-[1.5rem] cursor-pointer"
           >
             I consent to being contacted by the team <span>*</span>
           </label>
         </div>
         {errors.consent && (
-          <span className="block w-full mt-[8px] text-red">
+          <span className="block w-full mt-[.5rem] text-red">
             {errors.consent.message}
           </span>
         )}
       </fieldset>
       <button
         type="submit"
-        className="mt-[40px] md:mt-[41px] w-full px-[11px] py-[17px] rounded-[7px] text-[17px] font-bold bg-green text-white hover:bg-light-green hover:text-green transition-all duration-300"
+        className="mt-[2.5rem] md:mt-[2.5625rem] w-full px-[.6875rem] py-[1.0625rem] rounded-[.4375rem] text-[1.0625rem] font-bold bg-green text-white hover:bg-light-green hover:text-green transition-all duration-300"
       >
         Submit
       </button>
