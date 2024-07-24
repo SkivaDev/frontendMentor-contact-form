@@ -149,6 +149,7 @@ const Form = () => {
           </span>
         )}
       </fieldset>
+      
       <fieldset className="mt-[1.5rem] md:mt-[1.5625rem] w-full">
         <legend className="sr-only">Message</legend>
         <label htmlFor="message">Message:</label>
@@ -172,6 +173,7 @@ const Form = () => {
           </span>
         )}
       </fieldset>
+
       <fieldset className="mt-[2.5rem] w-full">
         <legend className="sr-only">Consent</legend>
         <div className="flex gap-[1.3125rem] px-[.3125rem]">
